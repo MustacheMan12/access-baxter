@@ -60,7 +60,7 @@
 
  //And this is a single line comment! Use comments to describe what your code does; it's easy to forget!
 
-/* Scroll down to the main method of the DayOne class for to begin the course! */
+/* Scroll down to the main method of the DayOne class to begin the course! */
 
 public class DayOne {
 	
@@ -68,21 +68,22 @@ public class DayOne {
 	public static void main(String[] args) {
 		
 		/*
-		 * SECTION 1: INPUT AND OUTPUT
+		 * SECTION 1: INPUT, OUTPUT, AND DATA TYPES
 		 * 
 		 *
 	     *  Let's start by just printing a message to the console. Copy the line below:
 	     *  
 	     *  System.out.println("Hello World");
 	     *  
-	     *  and paste it outside of the comment.
+	     *  and paste it outside of this comment where it says to put your code.
          *
 		 * */
 		
 		//YOUR CODE GOES RIGHT UNDER HERE
-		System.out.println("Hello World");
 		
 		/*
+		 * Good job on your first line of code!
+		 * 
 		 * Uncomment the lines of code below by highlighting them and pressing 'Ctrl + /'.
 		 * 
 		 * Change the value of the String name to your name.
@@ -102,11 +103,12 @@ public class DayOne {
 		 * - void (we'll talk about this later)
 		 * 
 		 * Uncomment the code below, change the value of the variable bool to 'true', and execute your code.
+		 * Observe what happens.
 		 * 
 		 * */
 		
 		//'true' or 'false'
-		boolean bool = false;
+		boolean bool = true;
 		
 		//any negative or positive whole number, or 0
 		int number = 10;
@@ -119,7 +121,75 @@ public class DayOne {
 			System.out.println("The variable decimal stores the value " + decimal);
 		}
 		
+		/*
+		 * There are operators for doing math in Java:
+		 * 
+		 * - addition +
+		 * - subtraction -
+		 * - multiplication *
+		 * - division /
+		 * 
+		 * as well as the unary operators:
+		 * 
+		 * - number++ (adds 1 to number)
+		 * - number1 += number2 (shorthand for number1 = number1 + number2) 
+		 * - number1 *= number2 (etc)
+		 * 
+		 * Uncomment the code below and try to print the numbers in the correct spots.
+		 * 
+		 * */
 		
+		
+		int num0 = 0, num1 = 5, num2 = 3, num3 = 11, num4 = -3, num5 = 2;
+		
+		//Match these variables with the ones above the print the write numbers
+		//in the lines below!
+		int numA = 0, 
+				numB = 0, 
+				numC = 0, 
+				numD = 0, 
+				numE = 0, 
+				numF = 0;
+		
+		System.out.println("Print 5 here: " + numA);
+		System.out.println("Print 0 here: " + numB);
+		System.out.println("Print 11 here: " + numC);
+		System.out.println("Print -3 here: " + numD);
+		System.out.println("Print 3 here: " + numE);
+		System.out.println("Print 2 here: " + numF);
+		
+		//UNCOMMENT, BUT DON'T CHANGE THIS
+		gradeOne(numA, numB, numC, numD, numE, numF);
+		
+		
+		
+		
+		
+		
+	}
+	
+	static void gradeOne(int numA, int numB, int numC, int numD, int numE, int numF){
+		
+		int grade = 0;
+		
+		if(numA == 5)
+			grade++;
+		if(numB == 0)
+			grade++;
+		if(numC == 11)
+			grade++;
+		if(numD == -3)
+			grade++;
+		if(numE == 3)
+			grade++;
+		if(numF == 2)
+			grade++;
+		
+		if(grade == 6) {
+			System.out.println("You got 6 out of 6! Great job!");
+		}else {
+			System.out.println("You got " + grade + " correct! Try again! ;)");
+		}
 		
 	}
 
