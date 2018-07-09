@@ -91,9 +91,9 @@ public class DayOne {
 		/*
 		 * Good job on your first line of code!
 		 * 
-		 * Uncomment the lines of code below by highlighting them and pressing 'Ctrl + /'.
+		 * Change run to true below, and change the value of the String name to your name.
 		 * 
-		 * Change the value of the String name to your name.
+		 * 
 		 * 
 		 * */
 		
