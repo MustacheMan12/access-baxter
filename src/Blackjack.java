@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /*
  * We will be creating a digital version of the popular card game blackjack!
  * 
@@ -32,8 +34,47 @@ public class Blackjack {
 	
 	public static void main(String[] args) {
 		//START HERE
+		Scanner in = new Scanner(System.in);
 		
+		int chips = 1000, playerTotal = 0, compTotal = 0;
+		boolean play;
+		
+		while(askToPlay(in)) {		
+			
+			int pDraw1 = randomCard(), pDraw2 = randomCard(),
+					cDraw1 = randomCard(), cDraw2 = randomCard();
+			
+			playerTotal += pDraw1 + pDraw2;
+			compTotal += cDraw1 + cDraw2;
+			
+			System.out.println("You drew a " + pDraw1 + " and a " + pDraw2);
+			System.out.println("The computer drew a " + cDraw1 + " and a " + cDraw2 + "\n");
+			
+			
+		}
+		
+		System.out.println("Goodbye");
 
+	}
+	
+	public static boolean askToPlay(Scanner in) {
+		
+		System.out.println("Would you like to play a game of Blackjack? (y/n)");
+		
+		String answer = in.nextLine();
+		boolean play;
+		
+		if(answer.contains("y")) {
+			play = true;
+		}else {
+			play = false;
+		}
+		
+		return play;
+	}
+	
+	public static int randomCard() {
+		return (int) Math.floor(Math.random() * Math.floor(12)) + 1;
 	}
 
 }
